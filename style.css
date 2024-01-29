@@ -47,6 +47,13 @@ a {
   font-weight: 400;
   color: var(--text-color);
 }
+
+.title {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
 /* Layouts */
 .container {
   max-width: 1000px;
@@ -71,6 +78,59 @@ a {
 .profile {
   grid-column: 1 / -1;
   margin-bottom: 2rem;
+}
+
+.group_1, .group_2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.group_3 {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.group_3 > div {
+  flex: 1;
+}
+
+.item_preTitile {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 768px) {
+  .profile {
+    margin-bottom: 0;
+  }
+  .group_3 {
+    flex-direction: column;
+  }
+}
+
+.item_title {
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 500;
+  margin: 0.8rem 0;
+}
+
+.item_subtitle {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.certification_item {
+  margin-top: 2rem;
 }
 
 /* Profile */
@@ -120,5 +180,109 @@ a {
 @media only screen and (max-width: 768px) {
   .profile_container {
     flex-direction: column;
+  }
+}
+
+/* Expertise */
+
+.skills_list {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  line-height: 2;
+}
+
+/* Ref */
+
+.ref_item {
+  margin-top: 2rem;
+}
+
+.ref_name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Education */
+
+.edu_item {
+  margin-top: 2rem;
+}
+
+/* Experience */
+
+.exp_item {
+  margin-top: 2rem;
+}
+
+/* Awards */
+
+.awards_items {
+  margin-top: 2rem;
+}
+
+/* Interest */
+
+.interest_items {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.interest_item {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--text-color);
+}
+
+.interest_item svg {
+  width: 2rem;
+}
+
+.contact_info p {
+  margin-bottom: 10px;
+}
+
+.social_items {
+  margin-top: 2rem;
+}
+
+.social_item {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--text-color);
+}
+
+.social_item:hover {
+  color: var(--primary-color);
+}
+
+.social_item svg {
+  width: 2rem;
+}
+
+hr {
+  grid-column: 1 /-1;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-top: 2px solid rgba(128, 128, 128, 0.299);
+}
+
+@media only screen and (max-width:768px) {
+  hr {
+    margin: 0 auto;
   }
 }
